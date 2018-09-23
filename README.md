@@ -1,4 +1,5 @@
 # Bekaruth
+This is my personal website. I'm not sure why anyone would look at this code, but I wanted to practice using github while while I was at it. I'm also open to any feedback on my Angular code. I'm always looking to improve!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
