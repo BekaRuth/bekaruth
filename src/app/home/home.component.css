@@ -1,4 +1,6 @@
-#header {
-    background: url("../../assets/background_beka.jpg") center no-repeat;
-    height: 1000px;
+@media all and (min-width: 600px) {
+    #header {
+        background: url("../../assets/background_beka.jpg") center no-repeat;
+        height: 1000px;
+    }
 }

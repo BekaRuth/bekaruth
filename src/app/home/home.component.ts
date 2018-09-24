@@ -13,11 +13,16 @@ import { NavigationLink } from '../../models/navigationLink';
 })
 export class HomeComponent implements OnInit {
   navLinks: NavigationLink[];
-  bioImage = '../../assets/nav-images/bio_white.png';
+  
   constructor(private referenceDataService: ReferenceDataService, private router: Router) { }
 
   ngOnInit() {
     this.navLinks = this.referenceDataService.getNavImages();
+
+    // Home page will not display Home navigation.
+    this.navLinks = this.navLinks.filter(function( link ) {
+      return link.name !== 'home';
+  });
   }
 
   navigateLink(linkName: string) {

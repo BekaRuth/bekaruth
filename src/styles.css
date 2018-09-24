@@ -1,7 +1,15 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-body {
-    background-image: url("/assets/background-triangles.jpg");
+@media all and (min-width: 600px) {
+    body {
+        background-image: url("/assets/background-triangles.jpg");
+    }
+}
+
+@media(max-width: 599px) {
+    body {
+        background-color: grey !important;
+    }
 }
 
 .padded10 {
@@ -10,4 +18,16 @@ body {
 
 .full-width {
     width: 100%;
+}
+
+.nav-button {
+    background-color: white;
+}
+
+.menu {
+    background-color: grey;
+}
+
+.pointer {
+    cursor: pointer;
 }

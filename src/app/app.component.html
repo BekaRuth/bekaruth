@@ -1,1 +1,17 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<button mat-icon-button [matMenuTriggerFor]="menu" class="nav-button" *ngIf="!isHomePage()">
+    <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu" class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" *ngFor="let link of navLinks">    
+                <img [src]="link.current" class="full-width pointer"
+                    (mouseover)="link.current = link.purple" (mouseout)="link.current = link.white" (click)="navigateLink(link.name)">
+            </div> 
+        </div>
+    </div>
+</mat-menu>
+
 <router-outlet></router-outlet>

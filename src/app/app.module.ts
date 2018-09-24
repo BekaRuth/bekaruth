@@ -1,7 +1,9 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatButtonModule} from '@angular/material';
+import { MatButtonModule } from '@angular/material';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -38,6 +40,8 @@ import { ReferenceDataService } from './reference-data-service.service';
     BrowserAnimationsModule,
     BrowserModule,
     MatButtonModule,
+    MatMenuModule,
+    MatIconModule,
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },

@@ -8,7 +8,7 @@
       <div class="col-md-8 col-sm-12">
         <div class="row">
           <div *ngFor="let link of navLinks" class="col-md-4 col-sm-6 col-xs-6 padded10">       
-              <img [src]="link.current" class="full-width"
+              <img [src]="link.current" class="full-width pointer"
                 (mouseover)="link.current = link.purple" (mouseout)="link.current = link.white" (click)="navigateLink(link.name)">
             </div>
           </div>

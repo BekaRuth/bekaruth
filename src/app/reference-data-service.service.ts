@@ -3,10 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ReferenceDataService {
   getNavImages() {
     return [
-      // {name: 'home', white: '../../assets/nav-images/home_white.png', purple: '../../assets/nav-images/home_purple.png', current: '../../assets/nav-images/home_white.png'},
+      {name: 'home', white: '../../assets/nav-images/home_white.png', purple: '../../assets/nav-images/home_purple.png', current: '../../assets/nav-images/home_white.png'},
       {name: 'bio', white: '../../assets/nav-images/bio_white.png', purple: '../../assets/nav-images/bio_purple.png', current: '../../assets/nav-images/bio_white.png'},
       {name: 'resume', white: '../../assets/nav-images/resume_white.png', purple: '../../assets/nav-images/resume_purple.png', current: '../../assets/nav-images/resume_white.png'},
       {name: 'music', white: '../../assets/nav-images/music_white.png', purple: '../../assets/nav-images/music_purple.png', current: '../../assets/nav-images/music_white.png'},
@@ -17,7 +18,6 @@ export class ReferenceDataService {
       {name: 'projects', white: '../../assets/nav-images/projects_white.png', purple: '../../assets/nav-images/projects_purple.png', current: '../../assets/nav-images/projects_white.png'},
       {name: 'random', white: '../../assets/nav-images/random_white.png', purple: '../../assets/nav-images/random_purple.png', current: '../../assets/nav-images/random_white.png'},
       {name: 'interior-design', white: '../../assets/nav-images/interior_design_white.png', purple: '../../assets/nav-images/interior_design_purple.png', current: '../../assets/nav-images/interior_design_white.png'}
-
     ]
   }
 }
