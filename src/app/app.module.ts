@@ -54,7 +54,7 @@ import { ReferenceDataService } from './reference-data-service.service';
       { path: 'projects', component: ProjectsComponent },
       { path: 'twitch', component: TwitchComponent },
       { path: 'resume', component: ResumeComponent },
-    ])
+    ], {useHash: true})
   ],
   providers: [ReferenceDataService],
   bootstrap: [AppComponent]
