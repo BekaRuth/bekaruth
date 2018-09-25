@@ -22,6 +22,7 @@
 
 .nav-button {
     background-color: white;
+    margin: 10px !important;
 }
 
 .menu {
@@ -30,4 +31,8 @@
 
 .pointer {
     cursor: pointer;
+}
+
+.centered-text {
+    text-align: center;
 }

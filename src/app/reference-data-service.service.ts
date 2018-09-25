@@ -20,4 +20,19 @@ export class ReferenceDataService {
       {name: 'interior-design', white: '../../assets/nav-images/interior_design_white.png', purple: '../../assets/nav-images/interior_design_purple.png', current: '../../assets/nav-images/interior_design_white.png'}
     ]
   }
+
+  getInteriorDesignImages(): Array<string> {
+    return [
+      '../../assets/interior-design/dining-room.jpg',
+      '../../assets/interior-design/couch-pillows.jpg',
+      '../../assets/interior-design/deck.jpg',
+      '../../assets/interior-design/living-room.jpg',
+      '../../assets/interior-design/living-room2.jpg',
+      '../../assets/interior-design/messy-desk.jpg',
+      '../../assets/interior-design/music-corner.jpg',
+      '../../assets/interior-design/office-futon.jpg',
+      '../../assets/interior-design/tray.jpg',
+      '../../assets/interior-design/air-plants.jpg'
+    ];
+  }
 }

@@ -1,10 +1,14 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatButtonModule } from '@angular/material';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
+
+import { MatButtonModule } from '@angular/material';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material';
+import { MatMenuModule } from '@angular/material/menu';
+
+import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { AppComponent } from './app.component';
 import { GamesComponent } from './games/games.component';
@@ -40,8 +44,10 @@ import { ReferenceDataService } from './reference-data-service.service';
     BrowserAnimationsModule,
     BrowserModule,
     MatButtonModule,
-    MatMenuModule,
+    MatCardModule,
     MatIconModule,
+    MatMenuModule,
+    SlideshowModule,
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
