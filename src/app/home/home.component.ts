@@ -13,11 +13,13 @@ import { NavigationLink } from '../../models/navigationLink';
 })
 export class HomeComponent implements OnInit {
   navLinks: NavigationLink[];
+  socialMediaLinks;
   
   constructor(private referenceDataService: ReferenceDataService, private router: Router) { }
 
   ngOnInit() {
     this.navLinks = this.referenceDataService.getNavImages();
+    this.socialMediaLinks = this.referenceDataService.getSocialMedia();
 
     // Home page will not display Home navigation.
     this.navLinks = this.navLinks.filter(function( link ) {
@@ -27,5 +29,9 @@ export class HomeComponent implements OnInit {
 
   navigateLink(linkName: string) {
     this.router.navigateByUrl(linkName)
+  }
+
+  navigateSocialLink(link: string) {
+    window.open(link);
   }
 }
