@@ -36,3 +36,12 @@
 .centered-text {
     text-align: center;
 }
+
+.background-black {
+    background-color: black;
+    color: white;
+}
+
+.spacer100 {
+    margin-bottom: 100px;
+}

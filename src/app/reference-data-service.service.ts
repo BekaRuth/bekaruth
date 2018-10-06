@@ -36,8 +36,8 @@ export class ReferenceDataService {
   getSocialMedia() {
     return [
       {name: 'twitter', white: '../../assets/nav-images/twitter_white.png', purple: '../../assets/nav-images/twitter_purple.png', current: '../../assets/nav-images/twitter_white.png', link: 'https://twitter.com/bekaruth11'},
-      {name: 'twitch', white: '../../assets/nav-images/twitch_white.png', purple: '../../assets/nav-images/twitch_purple.png', current: '../../assets/nav-images/twitch_white.png', link: 'https://www.twitch.tv/bekaruth'},
-      {name: 'instagram', white: '../../assets/nav-images/instagram_white.png', purple: '../../assets/nav-images/instagram_purple.png', current: '../../assets/nav-images/instagram_white.png', link: 'https://www.instagram.com/rebekahruth/'}
+      {name: 'instagram', white: '../../assets/nav-images/instagram_white.png', purple: '../../assets/nav-images/instagram_purple.png', current: '../../assets/nav-images/instagram_white.png', link: 'https://www.instagram.com/rebekahruth/'},
+      {name: 'twitch', white: '../../assets/nav-images/twitch_white.png', purple: '../../assets/nav-images/twitch_purple.png', current: '../../assets/nav-images/twitch_white.png', link: 'https://www.twitch.tv/bekaruth'}
     ]
   }
 }

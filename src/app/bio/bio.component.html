@@ -1,2 +1,41 @@
 <div id="header">
+    <div class="container">
+        <div class="row">
+            <div class="spacer100"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card class="background-black centered-text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                Hi! My name is Beka and I have no idea what I'm doing with my life. So I made a website.
+                                <br>
+                                <br>
+                                I studied Computer Information Systems at Indiana Wesleyan University where I met my husband Tyler.
+                                <br>
+                                We make video games together and have one kitty baby named Elli.
+                                <br>
+                                <br>
+                                I currently work as a web consultant in Indianapolis, specializing in Web Design and Web Development.
+                                <br>
+                                <br>
+                                {{randomBio}}
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div *ngFor="let socialLink of socialMediaLinks" class="col-md-2 col-sm-4 col-xs-4 padded10">       
+                                    <img [src]="socialLink.current" class="full-width pointer"
+                                        (mouseover)="socialLink.current = socialLink.purple" (mouseout)="socialLink.current = socialLink.white" (click)="navigateSocialLink(socialLink.link)">
+                            </div>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
 </div>
