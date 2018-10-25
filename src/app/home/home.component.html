@@ -7,11 +7,11 @@
       <div class="col-md-4 col-sm-12"></div>
       <div class="col-md-8 col-sm-12">
         <div class="row">
-          <div *ngFor="let link of navLinks" class="col-md-4 col-sm-6 col-xs-6 padded10">       
+          <div *ngFor="let link of navLinks" class="col-md-4 col-sm-6 col-6 padded10">       
               <img [src]="link.current" class="full-width pointer"
                 (mouseover)="link.current = link.purple" (mouseout)="link.current = link.white" (click)="navigateLink(link.name)">
           </div>
-          <div *ngFor="let socialLink of socialMediaLinks" class="col-md-4 col-sm-6 col-xs-6 padded10">       
+          <div *ngFor="let socialLink of socialMediaLinks" class="col-md-4 col-sm-6 col-6 padded10">       
             <img [src]="socialLink.current" class="full-width pointer"
               (mouseover)="socialLink.current = socialLink.purple" (mouseout)="socialLink.current = socialLink.white" (click)="navigateSocialLink(socialLink.link)">
           </div>

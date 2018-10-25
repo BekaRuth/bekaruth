@@ -4,3 +4,10 @@
         height: 1000px;
     }
 }
+
+@media all and (max-width: 599px) {
+    #header {
+        background: url("../../assets/background_beka_center.jpg") center no-repeat;
+        height: 1000px;
+    }
+}

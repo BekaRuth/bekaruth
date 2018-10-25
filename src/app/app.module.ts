@@ -12,14 +12,11 @@ import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { AppComponent } from './app.component';
 import { GamesComponent } from './games/games.component';
-import { InstagramComponent } from './instagram/instagram.component';
-import { TwitterComponent } from './twitter/twitter.component';
 import { InteriorDesignComponent } from './interior-design/interior-design.component';
 import { MusicComponent } from './music/music.component';
 import { RandomComponent } from './random/random.component';
 import { BioComponent } from './bio/bio.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { TwitchComponent } from './twitch/twitch.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 
@@ -29,14 +26,11 @@ import { ReferenceDataService } from './reference-data-service.service';
   declarations: [
     AppComponent,
     GamesComponent,
-    InstagramComponent,
-    TwitterComponent,
     InteriorDesignComponent,
     MusicComponent,
     RandomComponent,
     BioComponent,
     ProjectsComponent,
-    TwitchComponent,
     ResumeComponent,
     HomeComponent
   ],
@@ -51,15 +45,13 @@ import { ReferenceDataService } from './reference-data-service.service';
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'games', component: InstagramComponent },
-      { path: 'twitter', component: TwitterComponent },
       { path: 'interior-design', component: InteriorDesignComponent },
       { path: 'music', component: MusicComponent },
       { path: 'random', component: RandomComponent },
       { path: 'bio', component: BioComponent },
       { path: 'projects', component: ProjectsComponent },
-      { path: 'twitch', component: TwitchComponent },
       { path: 'resume', component: ResumeComponent },
+      { path: 'games', component: GamesComponent}
     ], {useHash: true})
   ],
   providers: [ReferenceDataService],

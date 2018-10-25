@@ -22,7 +22,10 @@ export class BioComponent implements OnInit {
     let bioOptions: Array<string> = [
       'Tina Fey is my spirit animal.',
       'I am a Dance Dance Revolution Master.',
-      'No Items, Wendy Only, Town and City.'
+      'No Items, Wendy Only, Town and City.',
+      'I do what I want.',
+      'Your\'re not hardcore unless you live hardcore.',
+      'I like to eat, eat, eat apples and bananas.'
     ]
 
     this.randomBio = bioOptions[Math.floor(Math.random()*bioOptions.length)];
